@@ -2,7 +2,7 @@ ARG PORT TOKEN
 FROM gitpod/openvscode-server:1.65.2
 USER root
 RUN apt update
-RUN apt install curl -Y
+RUN apt install curl -y
 RUN curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain none
 RUN apt-get install -y openssl
 USER openvscode-server
